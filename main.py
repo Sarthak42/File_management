@@ -40,7 +40,7 @@ def recieve_file(unique_id):
 
 
 #add_new_file(45,"neww","12/32/12","neww","neww","neww")
-#remove_file(49)
+remove_file(785)
 #send_file(48)
 #recieve_file(48)
 
