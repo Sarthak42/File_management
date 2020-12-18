@@ -1,6 +1,6 @@
 import pandas as pd
 file_name = "data.csv"
-#data = pd.read_csv(file_name)
+data = pd.read_csv(file_name)
 
 def remove_file(unique_id):
 	global file_name
@@ -37,10 +37,10 @@ def recieve_file(unique_id):
 	data.loc[data["Unique_ID"] == unique_id,'Date_of_file_in'] = "edited"
 	data.to_csv(file_name,header=True,index=False)
 
-
-
 #add_new_file(45,"neww","12/32/12","neww","neww","neww")
-remove_file(785)
+#remove_file(785)
 #send_file(48)
 #recieve_file(48)
 
+#print(len(data.loc[data["Status"]=="IN"]))
+print(data.loc[data["Unique_ID"]=="WR2"])
